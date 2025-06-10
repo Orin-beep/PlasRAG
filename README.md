@@ -12,7 +12,7 @@ PlasRAG is a deep learning-based tool specifically designed for analyzing plasmi
 * [NumPy](https://pypi.org/project/numpy/) (pip install numpy==1.25.2)
 * [bidict](https://pypi.org/project/bidict/) (pip install bidict)
 * [PyTorch](https://pytorch.org/get-started/previous-versions/)>1.8.0
-* [Prodigal](https://anaconda.org/bioconda/prodigal) (conda install prodigal)
+* [Prodigal](https://anaconda.org/bioconda/prodigal) (conda install bioconda::prodigal)
 * [biopython](https://pypi.org/project/biopython/) (pip install biopython==1.81)
 * [transformers 4.46.1](https://github.com/huggingface/transformers) (pip install transformers==4.46.1)
 * [ESM](https://github.com/facebookresearch/esm) (pip install fair-esm)

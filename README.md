@@ -59,6 +59,12 @@ mv ~/.cache/torch/hub/checkpoints/ ./esm_models/
     - When running ```characterize.py```, you can use the option '--llama' to select your downloaded Llama-3 model ('meta-llama/Llama-3.2-3B-Instruct' or 'meta-llama/Llama-3.3-70B-Instruct').
 
 
+# Usage
+Before employing PlasRAG's two purposes, you should first run ```preprocessing.py``` for your interested plasmid DNA sequences in FASTA format (e.g., 'example_data/test_plasmids.fasta'). After that, you can run ```characterize.py``` for plasmid characterization (describing the plasmid properties based on model predictions and literature), or ```retrieve.py``` for plasmid retrieval (filtering eligible plasmids based on your selected queries).
+
+
+
+
 ## Full command-line options
 preprocessing.py:
 ```

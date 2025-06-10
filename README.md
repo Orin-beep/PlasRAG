@@ -74,9 +74,15 @@ You can then run ```characterize.py``` for plasmid characterization (describing 
 ## ```characterize.py```: plasmid property characterization
 - Mode 1: without Llama-3 for question answering
     - ```
-      python characterize.py --llm False -out results/
+      python characterize.py --llm False --out results/
       ```
-    - The results (plasmid properties predicted by the 10 multi-modal models) will be saved in the folder 'results/'.
+    - The results (plasmid properties predicted by the 10 multi-modal models) will be saved in the folder 'results/'. For example, the
+      | Contig | Phylum | Class | Order | Family | Genus | Species |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| NZ_CP050042.1  | Pseudomonadota  | Gammaproteobacteria  | Enterobacterales  | Enterobacteriaceae  | Escherichia  | -  | 
+| NZ_CP083619.1  | Bacillota  | Clostridia  | Eubacteriales  | Peptostreptococcaceae  | Clostridioides  | Clostridioides difficile  |
+| NZ_CP083659.1  | Pseudomonadota  | Gammaproteobacteria  | Moraxellales  | Moraxellaceae  | Acinetobacter  | Acinetobacter variabilis  |
+| Z22927.1  | Actinomycetota  | Actinomycetes  | Corynebacteriales  | Corynebacteriaceae  | Corynebacterium  | Corynebacterium glutamicum  |
 - Mode 2:
 
 ## ```retrieve.py```: plasmid DNA retrieval

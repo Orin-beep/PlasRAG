@@ -66,5 +66,8 @@ def find_matching_items(boolean_expression, items):
 
 query = inputs.query
 result = find_matching_items(query, items)
-result = ', '.join(result)
-print(f"The eligible plasmids aligning with the query expression '{query}' are {result}.")
+if(result!=[]):
+    result = ', '.join(result)
+    print(f"The eligible plasmids aligning with the query expression '{query}' are {result}.")
+else:
+    print(f"No eligible plasmid aligning with the query expression '{query}'")

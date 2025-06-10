@@ -18,6 +18,7 @@ PlasRAG is a deep learning-based tool specifically designed for analyzing plasmi
 * [ESM](https://github.com/facebookresearch/esm) (pip install fair-esm)
 * [bitsandbytes](https://github.com/bitsandbytes-foundation/bitsandbytes) (pip install bitsandbytes==0.42.0)
 * [accelerate](https://github.com/huggingface/accelerate) (pip install accelerate==0.27.2)
+* [datasets](https://github.com/huggingface/datasets) (pip install datasets)
 
 If you want to use the GPU to accelerate the program:
 - CUDA

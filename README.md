@@ -104,7 +104,9 @@ You can then run ```characterize.py``` for plasmid characterization (describing 
 | __Answer__  | The most relevant literature abstract regarding the plasmid in question is related to the reference plasmid pSK41. pSK41 is a 46.4-kb multiresistance plasmid from Staphylococcus aureus that has been completely sequenced. Analysis of the sequence has provided insights into the evolution of this clinically significant group of plasmids. 1) The plasmid encodes several resistance determinants, including Aminoglycoside Modifying Enzyme and Phosphotransferase, which confer resistance to various antibiotics such as amikacin, aminoglycoside, ... |
 
 ## ```retrieve.py```: plasmid DNA retrieval
-For more convenient usage, we constructed an ID-to-property list ```Query_vocabulary.pdf``` for the complete query vocabulary.
+For more convenient usage, we constructed an ID-to-property list ```Query_vocabulary.pdf``` for the complete query vocabulary. To retrieve plasmids of interest from the preprocessed candidates, you can first select IDs from the vocabulary and combine them into a Boolean expression query using 'and', 'or', and 'not'.
+
+
 
 ## Full command-line options
 preprocessing.py:

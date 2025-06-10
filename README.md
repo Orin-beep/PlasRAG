@@ -44,10 +44,10 @@ tar zxvf models.tgz
 rm models.tgz
 ```
 
-- The pretrained 10-faceted PlasRAG models (required):
+- The ESM-2 model (esm2_t33_650M_UR50D, required):
 ```
-wget https://zenodo.org/records/15605555/files/models.tgz
-tar zxvf models.tgz 
+python download_esm.py
+mv ~/.cache/torch/hub/checkpoints/ ./esm_models/ 
 ```
 
 

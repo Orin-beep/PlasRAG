@@ -76,7 +76,7 @@ You can then run ```characterize.py``` for plasmid characterization (describing 
     - ```
       python characterize.py --llm False -out results/
       ```
-    -The results (plasmid properties predicted by the 10 multi-modal models) will be saved in the folder 'results/'.
+    - The results (plasmid properties predicted by the 10 multi-modal models) will be saved in the folder 'results/'.
 - Mode 2:
 
 ## ```retrieve.py```: plasmid DNA retrieval

@@ -79,7 +79,7 @@ You can then run ```characterize.py``` for plasmid characterization (describing 
     - The results (plasmid properties predicted by the 10 multi-modal models) will be saved in the folder 'results/'. For example, the characterization result of the plasmid 'NC_005024.1' will be saved in 'results/NC_005024.1.tsv':
 
 | Item | Content |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- |
 | AMR  | The plasmid encodes ARGs that confer resistance to amikacin, aminoglycoside, aminoglycoside antibiotic, bleomycin, gentamicin, kanamycin, quaternary ammonium, tobramycin. The associated resistance mechanisms include Aminoglycoside Modifying Enzyme, Phosphotransferase. |
 | Virulence Factor  | Bacillota  |
 | Metal Resistance  | Pseudomonadota  |

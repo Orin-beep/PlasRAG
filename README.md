@@ -69,8 +69,9 @@ Before employing PlasRAG's two purposes, you should first run ```preprocessing.p
 python preprocessing.py --fasta example_data/test_plasmids.fasta --model_path models/ --esm esm_models/esm2_t33_650M_UR50D.pt
 ```
 
-Then, you can run ```characterize.py``` for plasmid characterization (describing the plasmid properties based on model predictions and literature), or ```retrieve.py``` for plasmid retrieval (filtering eligible plasmids based on your selected queries).
+You can then run ```characterize.py``` for plasmid characterization (describing plasmid properties based on model predictions and literature), or ```retrieve.py``` for plasmid retrieval (filtering eligible plasmids based on your selected queries).
 
+## Plasmid property characterization: ```characterize.py```
 
 
 

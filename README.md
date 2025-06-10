@@ -18,11 +18,11 @@ PlasRAG is a deep learning-based tool specifically designed for analyzing plasmi
 * [ESM](https://github.com/facebookresearch/esm) (pip install fair-esm)
 
 If you want to use the GPU to accelerate the program:
-* CUDA
-* PyTorch-GPU
-* For CPU version PyTorch: ```conda install pytorch torchvision torchaudio cpuonly -c pytorch```
-* For GPU version PyTorch: search [PyTorch](https://pytorch.org/get-started/previous-versions/) to find the correct CUDA version according to your computer
-  *test
+- CUDA
+- PyTorch-GPU
+- For CPU version PyTorch: ```conda install pytorch torchvision torchaudio cpuonly -c pytorch```
+- For GPU version PyTorch: search [PyTorch](https://pytorch.org/get-started/previous-versions/) to find the correct CUDA version according to your computer
+    - test
 
 
 ## Full command-line options

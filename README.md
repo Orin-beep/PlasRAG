@@ -72,7 +72,12 @@ python preprocessing.py --fasta example_data/test_plasmids.fasta --model_path mo
 You can then run ```characterize.py``` for plasmid characterization (describing plasmid properties based on model predictions and literature), or ```retrieve.py``` for plasmid retrieval (filtering eligible plasmids based on your selected queries).
 
 ## ```characterize.py```: plasmid property characterization
-
+- Mode 1: without Llama-3 for question answering
+    - ```
+      python characterize.py --llm False -out results/
+      ```
+    -The results (plasmid properties predicted by the 10 multi-modal models) will be saved in the folder 'results/'.
+- Mode 2:
 
 ## ```retrieve.py```: plasmid DNA retrieval
 

@@ -76,14 +76,22 @@ You can then run ```characterize.py``` for plasmid characterization (describing 
     - ```
       python characterize.py --llm False --out results/
       ```
-    - The results (plasmid properties predicted by the 10 multi-modal models) will be saved in the folder 'results/'. For example, the
+    - The results (plasmid properties predicted by the 10 multi-modal models) will be saved in the folder 'results/'. For example, the characterization result of the plasmid 'NC_005024.1' will be saved in 'results/NC_005024.1.tsv':
 
-| Contig | Phylum | Class | Order | Family | Genus | Species |
+| Item | Content |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| NZ_CP050042.1  | Pseudomonadota  | Gammaproteobacteria  | Enterobacterales  | Enterobacteriaceae  | Escherichia  | -  | 
-| NZ_CP083619.1  | Bacillota  | Clostridia  | Eubacteriales  | Peptostreptococcaceae  | Clostridioides  | Clostridioides difficile  |
-| NZ_CP083659.1  | Pseudomonadota  | Gammaproteobacteria  | Moraxellales  | Moraxellaceae  | Acinetobacter  | Acinetobacter variabilis  |
-| Z22927.1  | Actinomycetota  | Actinomycetes  | Corynebacteriales  | Corynebacteriaceae  | Corynebacterium  | Corynebacterium glutamicum  |
+| AMR  | The plasmid encodes ARGs that confer resistance to amikacin, aminoglycoside, aminoglycoside antibiotic, bleomycin, gentamicin, kanamycin, quaternary ammonium, tobramycin. The associated resistance mechanisms include Aminoglycoside Modifying Enzyme, Phosphotransferase. |
+| Virulence Factor  | Bacillota  |
+| Metal Resistance  | Pseudomonadota  |
+| Host Range  | Actinomycetota  |
+| Ecosystem | Actinomycetota  |
+| Mobility  | Actinomycetota  |
+| Incompatibility Group | Actinomycetota  |
+| Risk Index | Actinomycetota  |
+| Basic Properties | Actinomycetota  |
+| Reference plasmid | Actinomycetota |
+| Literature citation | Actinomycetota |
+| Literature abstract | Actinomycetota |
 - Mode 2:
 
 ## ```retrieve.py```: plasmid DNA retrieval

@@ -1,6 +1,6 @@
 # PlasRAG
 
-PlasRAG is a deep learning-based tool specifically designed for analyzing plasmids, which serves two purposes: (1) plasmid property characterization, and (2) plasmid DNA sequence retrieval. Users can easily input their interested plasmid sequences as queries. Then, PlasRAG can (1) describe the query plasmids based on predicted properties and information from relevant literature, (2) retrieve eligible plasmids based on selected property queries in Boolean expression form.
+PlasRAG is a deep learning-based tool specifically designed for analyzing plasmids, which serves __two purposes: (1) plasmid property characterization, and (2) plasmid DNA sequence retrieval.__ Users can easily input their interested plasmid sequences as queries. Then, PlasRAG can (1) describe the query plasmids based on predicted properties and information from relevant literature, (2) retrieve eligible plasmids based on selected property queries in Boolean expression form.
 
 
 ### E-mail: yongxinji2-c@my.cityu.edu.hk

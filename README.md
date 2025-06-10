@@ -40,7 +40,8 @@ If Anaconda fails to work, you can prepare the environment by individually insta
 - The pretrained 10-faceted PlasRAG models (required):
 ```
 wget https://zenodo.org/records/15605555/files/models.tgz
-tar zxvf models.tgz 
+tar zxvf models.tgz
+rm models.tgz
 ```
 
 - The pretrained 10-faceted PlasRAG models (required):

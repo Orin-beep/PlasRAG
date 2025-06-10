@@ -22,7 +22,7 @@ If you want to use the GPU to accelerate the program:
 - PyTorch-GPU
 - For CPU version PyTorch: ```conda install pytorch torchvision torchaudio cpuonly -c pytorch```
 - For GPU version PyTorch: search [PyTorch](https://pytorch.org/get-started/previous-versions/) to find the correct CUDA version according to your computer
-    - test
+    - For example, in my own server (CUDA 11.3), I installed PyTorch with the Pip command: ```pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --extra-index-url https://download.pytorch.org/whl/cu113```
 
 
 ## Full command-line options

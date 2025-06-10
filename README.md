@@ -77,7 +77,7 @@ You can then run ```characterize.py``` for plasmid characterization (describing 
       python characterize.py --llm False --out results/
       ```
     - The results (plasmid properties predicted by the 10 multi-modal models) will be saved in the folder 'results/'. For example, the
-      | Contig | Phylum | Class | Order | Family | Genus | Species |
+| Contig | Phylum | Class | Order | Family | Genus | Species |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | NZ_CP050042.1  | Pseudomonadota  | Gammaproteobacteria  | Enterobacterales  | Enterobacteriaceae  | Escherichia  | -  | 
 | NZ_CP083619.1  | Bacillota  | Clostridia  | Eubacteriales  | Peptostreptococcaceae  | Clostridioides  | Clostridioides difficile  |

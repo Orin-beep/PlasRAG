@@ -13,7 +13,7 @@ Usage of preprocessing.py:
         [--fasta FASTA] FASTA file of the input plasmid DNA sequences (either complete sequences or contigs) to be characterized or retrieved by the PlasRAG tool, default: example_data/test_plasmids.fasta
         [--model_path MODEL_PATH] path of the folder storing the downloaded models, default: models
         [--midfolder] folder to store the intermediate files for prediction, default: temp
-        [--esm] path of the ESM-2 model (esm2_t33_650M_UR50D.pt), which can be downloaded at: https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt, default: ./esm2_t33_650M_UR50D.pt
+        [--esm] path of the ESM-2 model (esm2_t33_650M_UR50D.pt), which can be downloaded at: https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt, default: esm_models/esm2_t33_650M_UR50D.pt
         [--batch_size BATCH_SIZE] batch size for prediction, default: 64
         [--database DATABASE] path of the PlasRAG database folder, default: ./database
         [--threads THREADS] number of threads utilized for prediction if 'cpu' is detected ('cuda' not found), default: 8

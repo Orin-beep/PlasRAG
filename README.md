@@ -2,8 +2,25 @@
 
 PlasRAG is a deep learning-based tool specifically designed for analyzing plasmids, which serves two purposes: (1) plasmid property characterization, and (2) plasmid DNA sequence retrieval. Users can easily input their interested plasmid sequences as queries. Then, PlasRAG can (1) describe the query plasmids based on predicted properties and information from relevant literature, (2) retrieve eligible plasmids based on selected property queries in Boolean expression form.
 
+
 ### E-mail: yongxinji2-c@my.cityu.edu.hk
 
+
+# Install (Linux or Ubuntu only)
+## Dependencies
+* [Python 3.x](https://www.python.org/downloads/)
+* [NumPy](https://pypi.org/project/numpy/)
+* [bidict](https://pypi.org/project/bidict/)
+* [PyTorch](https://pytorch.org/get-started/previous-versions/)>1.8.0
+* [Prodigal](https://anaconda.org/bioconda/prodigal)
+* [biopython](https://pypi.org/project/biopython/)
+* [transformers 4.46.1](https://github.com/huggingface/transformers) (pip install transformers==4.46.1)
+
+If you want to use the GPU to accelerate the program:
+* CUDA
+* PyTorch-GPU
+* For CPU version PyTorch: ```conda install pytorch torchvision torchaudio cpuonly -c pytorch```
+* For GPU version PyTorch: search [PyTorch](https://pytorch.org/get-started/previous-versions/) to find the correct CUDA version according to your computer
 
 
 ## Full command-line options

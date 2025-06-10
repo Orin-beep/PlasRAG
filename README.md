@@ -9,11 +9,11 @@ PlasRAG is a deep learning-based tool specifically designed for analyzing plasmi
 # Install (Linux or Ubuntu only)
 ## Dependencies
 * [Python 3.x](https://www.python.org/downloads/)
-* [NumPy](https://pypi.org/project/numpy/)
-* [bidict](https://pypi.org/project/bidict/)
+* [NumPy](https://pypi.org/project/numpy/) (pip install numpy==1.25.2)
+* [bidict](https://pypi.org/project/bidict/) (pip install bidict)
 * [PyTorch](https://pytorch.org/get-started/previous-versions/)>1.8.0
-* [Prodigal](https://anaconda.org/bioconda/prodigal)
-* [biopython](https://pypi.org/project/biopython/)
+* [Prodigal](https://anaconda.org/bioconda/prodigal) (conda install prodigal)
+* [biopython](https://pypi.org/project/biopython/) (pip install biopython==1.81)
 * [transformers 4.46.1](https://github.com/huggingface/transformers) (pip install transformers==4.46.1)
 * [ESM](https://github.com/facebookresearch/esm) (pip install fair-esm)
 
@@ -22,6 +22,7 @@ If you want to use the GPU to accelerate the program:
 * PyTorch-GPU
 * For CPU version PyTorch: ```conda install pytorch torchvision torchaudio cpuonly -c pytorch```
 * For GPU version PyTorch: search [PyTorch](https://pytorch.org/get-started/previous-versions/) to find the correct CUDA version according to your computer
+  **test
 
 
 ## Full command-line options

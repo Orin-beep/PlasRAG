@@ -15,6 +15,7 @@ PlasRAG is a deep learning-based tool specifically designed for analyzing plasmi
 * [Prodigal](https://anaconda.org/bioconda/prodigal)
 * [biopython](https://pypi.org/project/biopython/)
 * [transformers 4.46.1](https://github.com/huggingface/transformers) (pip install transformers==4.46.1)
+* [ESM](https://github.com/facebookresearch/esm) (pip install fair-esm)
 
 If you want to use the GPU to accelerate the program:
 * CUDA

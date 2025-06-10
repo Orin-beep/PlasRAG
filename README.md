@@ -56,9 +56,9 @@ mv ~/.cache/torch/hub/checkpoints/ ./esm_models/
     - If you have a powerful GPU, we recommend downloading the Llama-3 model for text summarization and question answering to support plasmid characterization. Depending on your GPU resources, you can choose to download one of the following two Llama-3 models:
     - The __lightweight__ [Llama-3.2-3B-Instruct model](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct):
       ```
-        python download_esm.py
-        mv ~/.cache/torch/hub/checkpoints/ ./esm_models/ 
-        ```
+      python download_llama_3b.py
+      mv ~/.cache/torch/hub/checkpoints/ ./esm_models/ 
+      ```
 
 ## Full command-line options
 preprocessing.py:

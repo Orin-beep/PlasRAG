@@ -16,6 +16,7 @@ PlasRAG is a deep learning-based tool specifically designed for analyzing plasmi
 * [biopython](https://pypi.org/project/biopython/) (pip install biopython==1.81)
 * [transformers 4.46.1](https://github.com/huggingface/transformers) (pip install transformers==4.46.1)
 * [ESM](https://github.com/facebookresearch/esm) (pip install fair-esm)
+* [bitsandbytes](https://github.com/bitsandbytes-foundation/bitsandbytes) (pip install bitsandbytes==0.42.0)
 
 If you want to use the GPU to accelerate the program:
 - CUDA
@@ -37,19 +38,26 @@ If Anaconda fails to work, you can prepare the environment by individually insta
 
 
 ## Download models
-- The pretrained 10-faceted PlasRAG models (required):
+- The pretrained 10-faceted PlasRAG models (__required__):
 ```
 wget https://zenodo.org/records/15605555/files/models.tgz
 tar zxvf models.tgz
 rm models.tgz
 ```
 
-- The ESM-2 model (esm2_t33_650M_UR50D, required):
+- The ESM-2 model (esm2_t33_650M_UR50D, __required__):
 ```
 python download_esm.py
 mv ~/.cache/torch/hub/checkpoints/ ./esm_models/ 
 ```
 
+- The Llama-3 generative model (__optional__):
+    - If you have a powerful GPU, we recommend downloading the Llama-3 model for text summarization and question answering to support plasmid characterization. Depending on your GPU resources, you can choose to download one of the following two Llama-3 models:
+    - The __lightweight__ [Llama-3.2-3B-Instruct model](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct):
+```
+python download_esm.py
+mv ~/.cache/torch/hub/checkpoints/ ./esm_models/ 
+```
 
 ## Full command-line options
 preprocessing.py:

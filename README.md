@@ -72,7 +72,7 @@ python preprocessing.py --fasta example_data/test_plasmids.fasta --model_path mo
 You can then run ```characterize.py``` for plasmid characterization (describing plasmid properties based on model predictions and literature), or ```retrieve.py``` for plasmid retrieval (filtering eligible plasmids based on your selected queries).
 
 ## ```characterize.py```: plasmid property characterization
-- Mode 1: without Llama-3 for question answering
+- __Mode 1__: without Llama-3 for question answering
     - ```
       python characterize.py --llm False --out results/
       ```
@@ -81,17 +81,17 @@ You can then run ```characterize.py``` for plasmid characterization (describing 
 | Item | Content |
 | ------------- | ------------- |
 | AMR  | The plasmid encodes ARGs that confer resistance to amikacin, aminoglycoside, aminoglycoside antibiotic, bleomycin, gentamicin, kanamycin, quaternary ammonium, tobramycin. The associated resistance mechanisms include Aminoglycoside Modifying Enzyme, Phosphotransferase. |
-| Virulence Factor  | Bacillota  |
-| Metal Resistance  | Pseudomonadota  |
-| Host Range  | Actinomycetota  |
-| Ecosystem | Actinomycetota  |
-| Mobility  | Actinomycetota  |
-| Incompatibility Group | Actinomycetota  |
-| Risk Index | Actinomycetota  |
-| Basic Properties | Actinomycetota  |
-| Reference plasmid | Actinomycetota |
-| Literature citation | Actinomycetota |
-| Literature abstract | Actinomycetota |
+| Virulence Factor  | The plasmid does not encode any virulence factors. |
+| Metal Resistance  | The plasmid does not encode any metal resistance genes.  |
+| Host Range  | The plasmid is hosted by bacteria in the Staphylococcus genus.  |
+| Ecosystem | The plasmid can be found in hosts of species Homo sapiens, and ecosystems associated with Birds habitat, Human habitat, Mammal habitat, and engineered, host associated, modeled, simulated communities (contig mixture) ecosystems. |
+| Mobility  | The plasmid is a conjugative plasmid, which encodes a complete conjugation system and belongs to the mating-pair-formation type MPF_FATA, MPF_T. Additionally, it encodes T4SS ATPase virb4, Type IV coupling protein t4cp2 within the T4SS conjugation system. |
+| Incompatibility Group | The plasmid does not belong to any incompatibility groups.  |
+| Risk Index | The plasmid has a Combined Minimal risk level, categorized as follows: 1) Moderate risk based on insertion sequences, 2) Low risk based on its distribution across habitats, 3) Minimal based on virulence factor genes, 4) Low based on all encoded ARGs, 5) Minimal risk based on ARGs from WHO priority list, 6) Low risk based on its host range breadth. |
+| Basic Properties | The plasmid is a circular, Complete plasmid, sourced from Isolate, and hosted by Gram-positive bacteria.  |
+| Reference plasmid | plasmid pSK41 |
+| Literature citation | Berg, T, et al. "Complete nucleotide sequence of pSK41: evolution of staphylococcal conjugative multiresistance plasmids." J Bacteriol. 1998 Sep;180(17):4350-9. doi: 10.1128/JB.180.17.4350-4359.1998. |
+| Literature abstract | The 46.4-kb nucleotide sequence of pSK41, a prototypical multiresistance plasmid from ... |
 - Mode 2:
 
 ## ```retrieve.py```: plasmid DNA retrieval

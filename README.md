@@ -105,8 +105,11 @@ You can then run ```characterize.py``` for plasmid characterization (describing 
 
 ## ```retrieve.py```: plasmid DNA retrieval
 For more convenient usage, we constructed an ID-to-property list ```Query_vocabulary.pdf``` for the complete query vocabulary. To retrieve plasmids of interest from the preprocessed candidates, you can first select IDs from the vocabulary and combine them into a Boolean expression query using 'and', 'or', and 'not'.
-
-
+    - For example, if we want to retrieve complete plasmids whose host range is within the Enterobacteriaceae family but do not encode for the adherence virulence factor category, we can run the following command:
+    ```
+    python retrieve.py --query '(not VF1000) and CH2000 and HO4013'
+    ```
+    - The retrieval results will be displayed directly: ```The eligible plasmids aligning with the query expression '(not VF1000) and CH2000 and HO4013' are NC_010378.1.```
 
 ## Full command-line options
 preprocessing.py:

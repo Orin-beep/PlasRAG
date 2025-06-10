@@ -21,6 +21,7 @@ PlasRAG is a deep learning-based tool specifically designed for analyzing plasmi
 * [datasets](https://github.com/huggingface/datasets) (pip install datasets)
 * [einops](https://github.com/arogozhnikov/einops) (pip install einops)
 * [einops_exts](https://github.com/lucidrains/einops-exts) (pip install einops_exts)
+* [pyparsing](https://github.com/pyparsing/pyparsing) (pip install pyparsing)
 
 If you want to use the GPU to accelerate the program:
 - CUDA

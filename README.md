@@ -71,8 +71,10 @@ python preprocessing.py --fasta example_data/test_plasmids.fasta --model_path mo
 
 You can then run ```characterize.py``` for plasmid characterization (describing plasmid properties based on model predictions and literature), or ```retrieve.py``` for plasmid retrieval (filtering eligible plasmids based on your selected queries).
 
-## Plasmid property characterization: ```characterize.py```
+## ```characterize.py```: plasmid property characterization
 
+
+## ```retrieve.py```: plasmid DNA retrieval
 
 
 ## Full command-line options

@@ -36,6 +36,14 @@ conda activate plasrag
 If Anaconda fails to work, you can prepare the environment by individually installing the packages listed in the __Dependencies__ section.
 
 
+## Download models
+- The pretrained 10-faceted PlasRAG models:
+```
+wget https://zenodo.org/records/15605555/files/models.tgz
+tar zxvf models.tgz 
+```
+
+
 ## Full command-line options
 preprocessing.py:
 ```

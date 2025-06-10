@@ -25,6 +25,17 @@ If you want to use the GPU to accelerate the program:
     - For example, in my own server (CUDA 11.3), I installed PyTorch with the Pip command: ```pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --extra-index-url https://download.pytorch.org/whl/cu113```
 
 
+## Prepare the environment
+After cloning this repository (```git clone https://github.com/Orin-beep/PlasRAG```), you can use Anaconda to install ```environment.yaml```. This will install all packages you need in GPU mode (make sure you have installed CUDA on your system to use the GPU version; otherwise, PlasRAG will run in CPU mode). The installation command is: 
+```
+git clone https://github.com/Orin-beep/PlasRAG
+cd PlasRAG/
+conda env create -f environment.yaml -n plasrag
+conda activate plasrag
+```
+If Anaconda fails to work, you can prepare the environment by individually installing the packages listed in the __Dependencies__ section.
+
+
 ## Full command-line options
 preprocessing.py:
 ```

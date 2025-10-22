@@ -37,13 +37,8 @@ parser.add_argument('--batch_size', help="batch size for prediction, default: 64
 parser.add_argument('--database', help='path of the PlasRAG database folder, default: ./database', type=str,
                     default='./database')
 parser.add_argument('--threads',
-                    help="number of threads utilized for prediction if 'cpu' is detected ('cuda' not found), default: 8",
+                    help=" number of threads utilized for prediction if 'cpu' is detected ('cuda' not found), default: 8",
                     type=int, default=8)
-
-# parser.add_argument('--faa', help="The translated protein name", type=str, default="plasmids.faa")
-# parser.add_argument('--csv_file', help="The protein csv file", type=str, default="plasmids.csv")
-# parser.add_argument('--res_file', help="The protein csv file", type=str, default="res.dict")
-# parser.add_argument('--pub_file', help="The protein csv file", type=str, default="pub.dict")
 
 inputs = parser.parse_args()
 
@@ -68,10 +63,6 @@ def help_info():
 #########################  Prodigal  ########################
 #############################################################
 out_fn = inputs.midfolder
-
-# csv_file = inputs.csv_file
-# res_file = inputs.res_file
-# pub_file = inputs.pub_file
 
 if not os.path.isdir(out_fn):
     os.makedirs(out_fn)

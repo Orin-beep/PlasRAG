@@ -1,6 +1,6 @@
 # PlasRAG
 
-PlasRAG is a deep learning-based tool specifically designed for analyzing plasmids, which serves __two purposes: (1) plasmid property characterization, and (2) plasmid DNA sequence retrieval.__ Users can easily input their interested plasmid sequences as queries. Then, PlasRAG can (1) describe the query plasmids based on predicted properties and information from relevant literature, (2) retrieve eligible plasmids based on selected property queries in Boolean expression form.
+PlasRAG is a deep learning-based tool specifically designed for analyzing plasmids, which serves __two purposes: (1) property characterization for plasmid DNA sequences, and (2) plasmid DNA sequence retrieval.__ Users can easily input their interested plasmid sequences as queries. Then, PlasRAG can (1) describe the query plasmids based on predicted properties and information from relevant literature, (2) retrieve eligible plasmids based on selected property queries in Boolean expression form.
 
 
 ### E-mail: yongxinji2-c@my.cityu.edu.hk
@@ -56,7 +56,7 @@ python download_esm.py
 mv ~/.cache/torch/hub/checkpoints/ ./esm_models/ 
 ```
 
-- The Llama-3 generative model (__optional__):
+- The LLM generative model (__optional__):
     - If you have a powerful GPU, we recommend downloading the Llama-3 model for text summarization and question answering to support plasmid characterization. Depending on your GPU resources, you can choose to download one of the following two Llama-3 models:
     - The __lightweight__ [Llama-3.2-3B-Instruct model](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct): ```python download_llama_3b.py```
     - The __larger__ [Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct) ```python download_llama_70b.py```

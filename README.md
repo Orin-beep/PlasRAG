@@ -160,9 +160,11 @@ You can run the retrieval script as follows:
 python retrieve.py --query "<Boolean_expression>" --database <database_directory>
 ```
 #### Example 1 — Retrieve from Your Own Plasmid Database
-Suppose you want to find complete plasmids whose host range is within the Enterobacteriaceae family but that do not encode any adherence‑related virulence factors, from your own custom database.
+Suppose you want to find complete plasmids whose host range is within the Enterobacteriaceae family but that do not encode any adherence‑related virulence factors, from your own custom database. The default my_dir is the temp directory. 
 Use the following command:
 ```
+python retrieve.py --query "(not VF1000) and CH2000 and HO4013" 
+or
 python retrieve.py --query "(not VF1000) and CH2000 and HO4013" --retrieve_db my_dir
 ```
 #### Example 2 — Retrieve from the Built‑in PlasRAG Database
@@ -175,7 +177,7 @@ python retrieve.py --query "(not VF1000) and CH2000 and HO4013" --retrieve_db Pl
 The matching plasmid IDs will be printed directly in the terminal.
 For example:
 
-The eligible plasmids aligning with the query expression '(not VF1000) and CH2000 and HO4013' are the NC_000001 sequence.
+The eligible plasmids aligning with the query expression '(not VF1000) and CH2000 and HO4013' are the NC_010378.1 sequence.
 
 ## Full command-line options
 preprocessing.py:
@@ -209,4 +211,5 @@ Usage of retrieve.py:
         [--query QUERY] query boolean expression combined with property IDs and logical operators ('and', 'or', 'not'), e.g., 'CH1000 and (AM3000 or AM3002 or AM3016)', default: 'CH1000'
         [--retrieve_db RETRIEVE_DB] path of the database folder you want to retrieve the plasmid sequences, default: ./temp
         [--database DATABASE] path of the PlasRAG database folder, default: ./database
+        [--output_dir OUTPUT_DIR] path saved the results, default: ./temp
 ```

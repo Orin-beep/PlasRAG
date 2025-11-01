@@ -41,7 +41,7 @@ def help_info():
         [--query QUERY] query boolean expression combined with property IDs and logical operators ('and', 'or', 'not'), e.g., 'CH1000 and (AM3000 or AM3002 or AM3016)', default: 'CH1000'
         [--retrieve_db retrieve_db] path of the database folder you want to retrieve the plasmid sequences, default: ./temp
         [--database DATABASE] path of the PlasRAG database folder, default: ./database
-        [--output_dir OUTPUT_DIR] path saved the results, default: ./temp
+        [--output_dir OUTPUT_DIR] path saved the results, default: ./results
 """)
 
 

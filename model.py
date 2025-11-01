@@ -153,7 +153,7 @@ class ProteinTokenizer(PreTrainedModel):
 
 
 class retriever(PreTrainedModel):
-    def __init__(self, config:retrieverConfig, raw_embed, tokenizer, vocab, max_length, text_embed_path, device, domain):
+    def __init__(self, config:retrieverConfig, raw_embed, vocab, text_embed_path, device):
         super().__init__(config)
         self.raw_embed = raw_embed
         self.raw_embed_dim = 1280
@@ -231,4 +231,3 @@ def get_vram():
     total_cubes = 24
     free_cubes = int(total_cubes * free / total)
     print(f'VRAM: {total - free:.2f}/{total:.2f}GB\t VRAM:[' + (total_cubes - free_cubes) * '▮' + free_cubes * '▯' + ']')
-

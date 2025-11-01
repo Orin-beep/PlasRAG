@@ -22,8 +22,8 @@ parser.add_argument('--retrieve_db',
                     help='path of the database folder you want to retrieve the plasmid sequences, default: ./temp',
                     type=str, default='./temp')
 parser.add_argument('--output_dir',
-                    help='path saved the results, default: ./temp',
-                    type=str, default='./temp')
+                    help='path saved the results, default: ./results',
+                    type=str, default='./results')
 inputs = parser.parse_args()
 db_path = inputs.database
 retrieve_db = inputs.retrieve_db

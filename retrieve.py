@@ -94,20 +94,21 @@ if (result != []):
         print(res)
 
     target_ids = set(result)
-    output_fasta = f"{out_fn}/align_query_plasmid.fasta"
+
     count = 0  # 统计成功写入的序列数
 
-    with open(output_fasta, "w") as handle:
-
-        if retrieve_db == "PlasRAG":
+    if retrieve_db == "PlasRAG":
+        output_fasta = f"{out_fn}/align_query_plasmid_from_PlasRAG.fasta"
+        with open(output_fasta, "w") as handle:
             zip_path = f"{db_path}/PlasRAG_plasmids.fasta.gz"
             with gzip.open(zip_path, "rt") as fasta_file:  # "t" 文本模式
                 for record in SeqIO.parse(fasta_file, "fasta"):
                     if record.id in target_ids:
                         count += SeqIO.write(record, handle, "fasta")
 
-        else:
-
+    else:
+        output_fasta = f"{out_fn}/align_query_plasmid_from_own.fasta"
+        with open(output_fasta, "w") as handle:
             path = os.path.join(retrieve_db, "split_fasta")
             for fname in os.listdir(path):
                 if not fname.endswith(".fasta"):

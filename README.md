@@ -50,7 +50,8 @@ tar zxvf models.tgz
 rm models.tgz
 ```
 ## Download database
-### all the data used for PlasRAG (__required__). The database is large because it includes the plasmids fasta sequences. Please be patient:
+### All the data used for PlasRAG (__required__). 
+The database is large because it includes the plasmids fasta sequences. Please be patient:
 ```
 wget https://zenodo.org/records/17498182/files/database.tar.gz?download=1
 tar -xzf database.tar.gz

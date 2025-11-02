@@ -49,6 +49,13 @@ wget https://zenodo.org/records/15605555/files/models.tgz
 tar zxvf models.tgz
 rm models.tgz
 ```
+## Download database
+### all the data used for PlasRAG (__required__). The database is large because it includes the plasmids fasta sequences. Please be patient:
+```
+wget https://zenodo.org/records/17498182/files/database.tar.gz?download=1
+tar -xzf database.tar.gz
+rm database.tar.gz
+```
 
 ### The ESM-2 model (esm2_t33_650M_UR50D, __required__):
 ```
@@ -174,10 +181,8 @@ You can also search within the PlasRAG reference plasmid database by simply spec
 python retrieve.py --query "(not VF1000) and CH2000 and HO4013" --retrieve_db PlasRAG
 ``` 
 ### Output
-The matching plasmid IDs will be printed directly in the terminal.
-For example:
+The matching plasmid IDs and the sequences will be saved in a csv file and fasta file.
 
-The eligible plasmids aligning with the query expression '(not VF1000) and CH2000 and HO4013' are the NC_010378.1 sequence.
 
 ## Full command-line options
 preprocessing.py:

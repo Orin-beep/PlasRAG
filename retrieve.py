@@ -1,5 +1,5 @@
 import os
-
+import csv
 from pyparsing import infixNotation, opAssoc, Word, alphas
 import pickle as pkl
 import re
@@ -89,9 +89,9 @@ query = inputs.query
 result = find_matching_items(query, items)
 if (result != []):
     # result = ', '.join(result)
-    print(f"The eligible plasmids aligning with the query expression '{query}' are: ")
-    for res in result:
-        print(res)
+    # print(f"The eligible plasmids aligning with the query expression '{query}' are: ")
+    # for res in result:
+    #     print(res)
 
     target_ids = set(result)
 
@@ -99,12 +99,17 @@ if (result != []):
 
     if retrieve_db == "PlasRAG":
         output_fasta = f"{out_fn}/align_query_plasmid_from_PlasRAG.fasta"
+        output_csv = f"{out_fn}/align_query_plasmid_from_PlasRAG.csv"
         with open(output_fasta, "w") as handle:
             zip_path = f"{db_path}/PlasRAG_plasmids.fasta.gz"
             with gzip.open(zip_path, "rt") as fasta_file:  # "t" 文本模式
                 for record in SeqIO.parse(fasta_file, "fasta"):
                     if record.id in target_ids:
                         count += SeqIO.write(record, handle, "fasta")
+
+        with open(output_csv, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerows([[item] for item in result])
 
     else:
         output_fasta = f"{out_fn}/align_query_plasmid_from_own.fasta"
@@ -117,8 +122,12 @@ if (result != []):
                 for record in SeqIO.parse(file_path, "fasta"):
                     if record.id in target_ids:
                         count += SeqIO.write(record, handle, "fasta")
+        output_csv = f"{out_fn}/align_query_plasmid_from_own.csv"
+        with open(output_csv, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerows([[item] for item in result])
 
-    print(f"✅ Done! Extracted {count} sequences which satisfy the query to {output_fasta}")
+    print(f"✅ Done! Extracted {count} sequences which satisfy the query to {output_fasta} and {output_csv} ")
 
 else:
     print(f"No eligible plasmid aligning with the query expression '{query}'")

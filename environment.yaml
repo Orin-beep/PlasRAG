@@ -1,7 +1,10 @@
 name: plasrag
 channels:
+  - anaconda
   - bioconda
   - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
 dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
@@ -20,6 +23,7 @@ dependencies:
   - openssl=3.0.18=hd6dcaed_0
   - prodigal=2.6.3=hec16e2b_4
   - pthread-stubs=0.3=h0ce48e5_1
+  - pyparsing=3.2.0=py310h06a4308_0
   - python=3.10.18=h1a3bd86_0
   - readline=8.3=hc2a1206_0
   - setuptools=78.1.1=py310h06a4308_0

@@ -231,3 +231,4 @@ def get_vram():
     total_cubes = 24
     free_cubes = int(total_cubes * free / total)
     print(f'VRAM: {total - free:.2f}/{total:.2f}GB\t VRAM:[' + (total_cubes - free_cubes) * '▮' + free_cubes * '▯' + ']')
+

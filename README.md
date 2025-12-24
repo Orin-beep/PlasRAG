@@ -219,3 +219,7 @@ Usage of retrieve.py:
         [--database DATABASE] path of the PlasRAG database folder, default: ./database
         [--output_dir OUTPUT_DIR] path saved the results, default: ./results
 ```
+## LICENSE
+
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)** —  
+see the [LICENSE](./LICENSE) file for details.
